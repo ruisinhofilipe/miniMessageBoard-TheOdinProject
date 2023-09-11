@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>This app was created by <%= author %><%= exclamation %></p>
+    <ul>
+
+      <% messagesArray.forEach((message) => { %>
+        <li><%=message.name%>: <%=message.text%> - <%=message.date%></li>
+      <% }); %>
+
+    </ul>
+
+    <a href="/new">Add new message</button>
+
+  </body>
+</html>
